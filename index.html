@@ -686,7 +686,7 @@
       cursor: pointer;
     }
 
-    /* ---------- FOOTER (Improved) ---------- */
+    /* ---------- FOOTER (Clean 4-column layout) ---------- */
     footer {
       background: #0a1d2f;
       color: #b5c9f0;
@@ -715,17 +715,29 @@
       height: 3px;
       background: #e67e22;
     }
-    .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 12px; }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li {
+      margin-bottom: 12px;
+    }
     .footer-links a {
       color: #b5c9f0;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
+      transition: 0.2s;
     }
-    .footer-links a:hover { color: #e67e22; transform: translateX(5px); }
-    .footer-col .social-links { display: flex; gap: 15px; margin-top: 15px; }
+    .footer-links a:hover {
+      color: #e67e22;
+      transform: translateX(5px);
+    }
+    .footer-col .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
     .footer-col .social-links a {
       color: white;
       background: #1e3a5f;
@@ -737,7 +749,10 @@
       justify-content: center;
       transition: 0.2s;
     }
-    .footer-col .social-links a:hover { background: #e67e22; transform: translateY(-3px); }
+    .footer-col .social-links a:hover {
+      background: #e67e22;
+      transform: translateY(-3px);
+    }
     .developer-info {
       grid-column: 1 / -1;
       text-align: center;
@@ -971,7 +986,33 @@
   </div>
 </section>
 
-
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <h2 style="color:white;">Get in touch</h2>
+      <p><i class="fas fa-map-pin"></i> Near Nakta High School, Bariyarpur Motipur</p>
+      <p><i class="fas fa-phone-alt"></i> +91 7631846050</p>
+      <p><i class="fas fa-envelope"></i> info@divyagyan.in</p>
+      <p><i class="fas fa-clock"></i> Mon-Sat: 9am - 7pm</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Email address">
+        <input type="tel" placeholder="Phone number">
+        <textarea rows="3" placeholder="Message / class query"></textarea>
+        <button type="submit">Send message <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
 
 <!-- ==================== FOOTER (Clean & Professional) ==================== -->
 <footer>
