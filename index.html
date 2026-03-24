@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-
-<meta name="google-site-verification" content="uoGxVOC2AleGLdWwGBmSH9zAenbvJdYI_F3R87rh6FQ" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<title>Divy Gyan - Rakesh Sir | Coaching 5-12</title>
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-<style>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="uoGxVOC2AleGLdWwGBmSH9zAenbvJdYI_F3R87rh6FQ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Divy Gyan · Rakesh Sir | Coaching 5-12</title>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
     /* ---------- GLOBAL RESET ---------- */
     * {
       margin: 0;
@@ -121,16 +115,6 @@
       transition: 0.25s;
     }
     .nav a:hover::after { width: 100%; }
-    .login-btn {
-      background: #0f2b4b;
-      color: white !important;
-      padding: 0.7rem 2rem;
-      border-radius: 60px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .login-btn:hover { background: #e67e22; transform: translateY(-2px); }
 
     /* ---------- NOTIFICATION TICKER ---------- */
     .notification-ticker {
@@ -470,7 +454,6 @@
       color: #ffaa33;
       z-index: 2;
     }
-    /* Photo placeholder without camera icon */
     .photo-placeholder {
       width: 110px;
       height: 110px;
@@ -489,7 +472,6 @@
       transition: 0.2s;
       overflow: hidden;
     }
-    /* No camera icon */
     .photo-placeholder::after {
       display: none;
     }
@@ -560,7 +542,7 @@
     .about h2 { font-size: 2.5rem; color: #0f2b4b; }
     .about .sir-name { font-size: 2.5rem; font-weight: 800; color: #e67e22; }
 
-    /* ---------- FEEDBACK SECTION - SINGLE BOX ---------- */
+    /* ---------- FEEDBACK SECTION ---------- */
     .feedback-section {
       padding: 60px 0;
       background: linear-gradient(120deg, #fef9e6, #fff8f0);
@@ -620,8 +602,6 @@
       background: #d9731e;
       transform: translateY(-2px);
     }
-
-    /* Scrollable reviews inside the same box */
     .reviews-list {
       max-height: 350px;
       overflow-y: auto;
@@ -706,7 +686,7 @@
       cursor: pointer;
     }
 
-    /* ---------- FOOTER ---------- */
+    /* ---------- FOOTER (Improved) ---------- */
     footer {
       background: #0a1d2f;
       color: #b5c9f0;
@@ -745,8 +725,8 @@
       gap: 10px;
     }
     .footer-links a:hover { color: #e67e22; transform: translateX(5px); }
-    .social-links { display: flex; gap: 15px; margin-top: 20px; }
-    .social-links a {
+    .footer-col .social-links { display: flex; gap: 15px; margin-top: 15px; }
+    .footer-col .social-links a {
       color: white;
       background: #1e3a5f;
       width: 40px;
@@ -755,14 +735,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 0.2s;
     }
-    .social-links a:hover { background: #e67e22; }
+    .footer-col .social-links a:hover { background: #e67e22; transform: translateY(-3px); }
     .developer-info {
       grid-column: 1 / -1;
       text-align: center;
       padding-top: 30px;
       border-top: 1px solid #1e3a5f;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
     .developer-info .heart {
       color: #ff4d4d;
@@ -782,177 +763,61 @@
       }
       .nav { display: none; }
       .carousel-slide { grid-template-columns: repeat(2, 1fr); }
-      .teacher-photo {
-        width: 220px;
-        height: 220px;
-      }
-      .feedback-box {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
+      .teacher-photo { width: 220px; height: 220px; }
+      .feedback-box { margin-left: 15px; margin-right: 15px; }
     }
 
     @media (max-width: 768px) {
-      body {
-        font-size: 16px;
-      }
-      .container {
-        padding: 0 20px;
-      }
-      .hero {
-        padding: 40px 0;
-      }
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-      .hero p {
-        font-size: 1rem;
-        margin: 15px 0 20px;
-      }
-      .hero-badge {
-        font-size: 0.8rem;
-        padding: 4px 15px;
-      }
-      .btn-primary, .btn-outline {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-      }
-      .section-header h2 {
-        font-size: 2rem;
-      }
-      .section-header p {
-        font-size: 0.9rem;
-      }
-      .coaching-desc h3 {
-        font-size: 1.6rem;
-      }
-      .coaching-desc p {
-        font-size: 1rem;
-        padding: 20px;
-      }
-      .teacher-card {
-        padding: 1.5rem;
-        gap: 1.5rem;
-      }
-      .teacher-photo {
-        width: 150px;
-        height: 150px;
-      }
-      .teacher-details h3 {
-        font-size: 1.8rem;
-      }
-      .teacher-details .designation {
-        font-size: 0.9rem;
-      }
-      .contact-item {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.8rem;
-      }
-      .social-icon {
-        width: 38px;
-        height: 38px;
-        font-size: 1.1rem;
-      }
-      .teacher-badge {
-        font-size: 0.8rem;
-        padding: 0.5rem 1rem;
-      }
-      .feature-grid {
-        gap: 20px;
-      }
-      .feature-item {
-        padding: 25px 20px;
-      }
-      .feature-item i {
-        font-size: 2.5rem;
-      }
-      .feature-item h3 {
-        font-size: 1.3rem;
-      }
-      .about h2 {
-        font-size: 1.8rem;
-      }
-      .about .sir-name {
-        font-size: 1.8rem;
-      }
-      .about-grid {
-        gap: 30px;
-      }
-      .feedback-box {
-        padding: 20px;
-      }
-      .feedback-form input, .feedback-form textarea {
-        padding: 12px 15px;
-        font-size: 0.9rem;
-      }
-      .feedback-form button {
-        padding: 10px;
-        font-size: 0.9rem;
-      }
-      .reviews-list {
-        max-height: 300px;
-      }
-      .review-item {
-        padding: 12px 15px;
-      }
-      .review-name {
-        font-size: 0.9rem;
-      }
-      .review-message {
-        font-size: 0.9rem;
-      }
-      .contact-grid {
-        gap: 30px;
-      }
-      .contact-info h2 {
-        font-size: 1.8rem;
-      }
-      .contact-info p {
-        font-size: 0.9rem;
-      }
-      .contact-form input, .contact-form textarea {
-        padding: 12px 15px;
-        font-size: 0.9rem;
-      }
-      .contact-form button {
-        padding: 12px;
-        font-size: 0.9rem;
-      }
-      .footer-grid {
-        gap: 30px;
-      }
-      .footer-col h4 {
-        font-size: 1.1rem;
-      }
-      .footer-links li a {
-        font-size: 0.9rem;
-      }
-      .developer-info {
-        font-size: 0.8rem;
-      }
-      .ticker-icon {
-        padding: 5px 15px;
-        font-size: 0.8rem;
-      }
-      .ticker-message {
-        font-size: 0.8rem;
-      }
+      body { font-size: 16px; }
+      .container { padding: 0 20px; }
+      .hero { padding: 40px 0; }
+      .hero h2 { font-size: 2.2rem; }
+      .hero p { font-size: 1rem; margin: 15px 0 20px; }
+      .hero-badge { font-size: 0.8rem; padding: 4px 15px; }
+      .btn-primary, .btn-outline { padding: 10px 20px; font-size: 0.9rem; }
+      .section-header h2 { font-size: 2rem; }
+      .section-header p { font-size: 0.9rem; }
+      .coaching-desc h3 { font-size: 1.6rem; }
+      .coaching-desc p { font-size: 1rem; padding: 20px; }
+      .teacher-card { padding: 1.5rem; gap: 1.5rem; }
+      .teacher-photo { width: 150px; height: 150px; }
+      .teacher-details h3 { font-size: 1.8rem; }
+      .teacher-details .designation { font-size: 0.9rem; }
+      .contact-item { font-size: 0.9rem; padding: 0.3rem 0.8rem; }
+      .social-icon { width: 38px; height: 38px; font-size: 1.1rem; }
+      .teacher-badge { font-size: 0.8rem; padding: 0.5rem 1rem; }
+      .feature-grid { gap: 20px; }
+      .feature-item { padding: 25px 20px; }
+      .feature-item i { font-size: 2.5rem; }
+      .feature-item h3 { font-size: 1.3rem; }
+      .about h2 { font-size: 1.8rem; }
+      .about .sir-name { font-size: 1.8rem; }
+      .about-grid { gap: 30px; }
+      .feedback-box { padding: 20px; }
+      .feedback-form input, .feedback-form textarea { padding: 12px 15px; font-size: 0.9rem; }
+      .feedback-form button { padding: 10px; font-size: 0.9rem; }
+      .reviews-list { max-height: 300px; }
+      .review-item { padding: 12px 15px; }
+      .review-name { font-size: 0.9rem; }
+      .review-message { font-size: 0.9rem; }
+      .contact-grid { gap: 30px; }
+      .contact-info h2 { font-size: 1.8rem; }
+      .contact-info p { font-size: 0.9rem; }
+      .contact-form input, .contact-form textarea { padding: 12px 15px; font-size: 0.9rem; }
+      .contact-form button { padding: 12px; font-size: 0.9rem; }
+      .footer-grid { gap: 30px; }
+      .footer-col h4 { font-size: 1.1rem; }
+      .footer-links li a { font-size: 0.9rem; }
+      .developer-info { font-size: 0.8rem; }
+      .ticker-icon { padding: 5px 15px; font-size: 0.8rem; }
+      .ticker-message { font-size: 0.8rem; }
     }
 
     @media (max-width: 500px) {
-      .carousel-slide {
-        grid-template-columns: 1fr;
-      }
-      .teacher-photo {
-        width: 120px;
-        height: 120px;
-      }
-      .hero h2 {
-        font-size: 1.8rem;
-      }
-      .section-header h2 {
-        font-size: 1.6rem;
-      }
+      .carousel-slide { grid-template-columns: 1fr; }
+      .teacher-photo { width: 120px; height: 120px; }
+      .hero h2 { font-size: 1.8rem; }
+      .section-header h2 { font-size: 1.6rem; }
     }
   </style>
 </head>
@@ -1022,34 +887,22 @@
   <div class="container">
     <div class="teacher-card">
       <div class="teacher-photo">
-        <!-- Place your teacher image "Rakesh sir.png" in the same folder -->
         <img src="Rakesh sir.png" alt="Rakesh Sir" onerror="this.src='https://via.placeholder.com/280x280?text=Rakesh+Sir'">
       </div>
       <div class="teacher-details">
         <h3>Rakesh Sir</h3>
         <div class="designation">Senior Teacher & Mentor</div>
         <div class="contact-items">
-          <div class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <a href="tel:+917631846050">+91 7631846050</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:info@divyagyan.in">info@divyagyan.in</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-graduation-cap"></i>
-            <span>M.A, B.Ed · 10+ years experience</span>
-          </div>
+          <div class="contact-item"><i class="fas fa-phone-alt"></i><a href="tel:+917631846050">+91 7631846050</a></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><a href="mailto:info@divyagyan.in">info@divyagyan.in</a></div>
+          <div class="contact-item"><i class="fas fa-graduation-cap"></i><span>M.A, B.Ed · 10+ years experience</span></div>
         </div>
         <div class="social-icons">
           <a href="https://www.facebook.com/share/1JJHLCRiiG/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="https://youtu.be/sX9EHhMaELc?si=5MBXyHD1FLuNvIr9" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
           <a href="https://www.instagram.com/rakesh_kumar00o?igsh=MW5ieW5nMnkxd25kdw==" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <div class="teacher-badge">
-          <i class="fas fa-star"></i> Expert - Mathematics & Science
-        </div>
+        <div class="teacher-badge"><i class="fas fa-star"></i> Expert - Mathematics & Science</div>
       </div>
     </div>
   </div>
@@ -1098,7 +951,7 @@
   </div>
 </section>
 
-<!-- ==================== FEEDBACK SECTION (Single Box) ==================== -->
+<!-- ==================== FEEDBACK SECTION ==================== -->
 <section class="feedback-section">
   <div class="container">
     <div class="feedback-box">
@@ -1112,7 +965,6 @@
       </div>
       <h3 style="margin-top: 0; margin-bottom: 15px;"><i class="fas fa-comment-dots"></i> Student Reviews</h3>
       <div class="reviews-list" id="reviewsList">
-        <!-- Reviews will be inserted here dynamically -->
         <div class="empty-reviews">No reviews yet. Be the first to share your experience!</div>
       </div>
     </div>
@@ -1147,7 +999,7 @@
   </div>
 </section>
 
-<!-- ==================== FOOTER ==================== -->
+<!-- ==================== FOOTER (Clean & Professional) ==================== -->
 <footer>
   <div class="container footer-grid">
     <div class="footer-col">
@@ -1188,7 +1040,7 @@
     <div class="developer-info">
       <i class="fas fa-code"></i> Website developed with <span class="heart">❤️</span> by <strong>Sunny Kumar</strong> (M.Sc Computer Science)<br>
       <i class="fas fa-graduation-cap"></i> Proud alumnus of Divy Gyan Coaching Centre – Matric (2018)<br>
-      <!-- Visitor Counter - Live using reliable CountAPI (single increment) -->
+      <!-- Visitor Counter -->
       <div style="margin-top: 12px; display: inline-flex; align-items: center; gap: 6px; background: #1e293b; padding: 6px 15px; border-radius: 30px;">
         <i class="fas fa-eye" style="color: #e67e22;"></i>
         <span>Visitors:</span>
@@ -1269,9 +1121,7 @@
           card.appendChild(crownSpan);
         }
         card.innerHTML += `
-          <div class="photo-placeholder">
-            <i class="fas fa-user-graduate"></i>
-          </div>
+          <div class="photo-placeholder"><i class="fas fa-user-graduate"></i></div>
           <h3>${t.name}</h3>
           <div class="topper-class">Class ${t.class}</div>
           <div class="rating">${starsHtml}</div>
@@ -1309,10 +1159,8 @@
   prevBtn.addEventListener('click', prevSlide);
   setInterval(nextSlide, 5000);
 
-  // ==================== FEEDBACK SYSTEM (Scrollable Reviews) ====================
+  // ==================== FEEDBACK SYSTEM ====================
   const STORAGE_KEY = 'divyGyanFeedbacks';
-  
-  // Default reviews
   const defaultFeedbacks = [
     { name: 'Anjali', message: 'Rakesh Sir made Maths so easy! Scored 95% in boards.' },
     { name: 'Ravi', message: 'Best coaching center in Motipur. Individual attention is amazing.' },
@@ -1323,7 +1171,6 @@
     { name: 'Vikash', message: 'Rakesh Sir\'s teaching style is unique and very effective.' }
   ];
 
-  // Load feedbacks from localStorage or use defaults
   let feedbacks = [];
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -1336,37 +1183,22 @@
   } catch(e) {
     feedbacks = [...defaultFeedbacks];
   }
-
-  // Limit to last 30 entries
   if (feedbacks.length > 30) feedbacks = feedbacks.slice(0, 30);
 
-  // Function to render the reviews list
   function renderReviews() {
     const reviewsContainer = document.getElementById('reviewsList');
     if (!reviewsContainer) return;
-    
     if (feedbacks.length === 0) {
       reviewsContainer.innerHTML = '<div class="empty-reviews">No reviews yet. Be the first to share your experience!</div>';
       return;
     }
-    
     let html = '';
     feedbacks.forEach(fb => {
-      html += `
-        <div class="review-item">
-          <div class="review-name">
-            <i class="fas fa-user-circle"></i> ${escapeHtml(fb.name)}
-          </div>
-          <div class="review-message">
-            "${escapeHtml(fb.message)}"
-          </div>
-        </div>
-      `;
+      html += `<div class="review-item"><div class="review-name"><i class="fas fa-user-circle"></i> ${escapeHtml(fb.name)}</div><div class="review-message">"${escapeHtml(fb.message)}"</div></div>`;
     });
     reviewsContainer.innerHTML = html;
   }
 
-  // Simple escape to prevent XSS
   function escapeHtml(str) {
     return str.replace(/[&<>]/g, function(m) {
       if (m === '&') return '&amp;';
@@ -1376,53 +1208,42 @@
     });
   }
 
-  // Save feedbacks to localStorage and re-render
   function saveFeedbacks() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(feedbacks));
     renderReviews();
   }
 
-  // Add new feedback
   function addFeedback(name, message) {
     if (!name.trim() || !message.trim()) return false;
     feedbacks.unshift({ name: name.trim(), message: message.trim() });
-    // Keep only last 30
     if (feedbacks.length > 30) feedbacks = feedbacks.slice(0, 30);
     saveFeedbacks();
     return true;
   }
 
-  // Handle form submission
   const form = document.getElementById('feedbackForm');
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const nameInput = document.getElementById('fbName');
-      const msgInput = document.getElementById('fbMessage');
-      const name = nameInput.value.trim();
-      const message = msgInput.value.trim();
-      
+      const name = document.getElementById('fbName').value.trim();
+      const message = document.getElementById('fbMessage').value.trim();
       if (name === '' || message === '') {
         alert('Please enter both name and feedback.');
         return;
       }
-      
       if (addFeedback(name, message)) {
-        nameInput.value = '';
-        msgInput.value = '';
+        document.getElementById('fbName').value = '';
+        document.getElementById('fbMessage').value = '';
         alert('Thank you for your feedback! Your review has been added.');
       } else {
         alert('Something went wrong.');
       }
     });
   }
-
-  // Initial render
   renderReviews();
 
   // ==================== VISITOR COUNTER (SINGLE INCREMENT) ====================
   (function() {
-    // Flag to ensure the counter runs only once per page load
     if (window._visitorCounterStarted) return;
     window._visitorCounterStarted = true;
 
@@ -1430,7 +1251,6 @@
       const counterElement = document.getElementById('visitorCount');
       if (!counterElement) return;
 
-      // Try multiple counter services (they increment on hit)
       const services = [
         { url: 'https://api.counterapi.dev/v1/divygyan-visits/hit', parse: (data) => data.count },
         { url: 'https://api.countapi.xyz/hit/divygyan-coaching/visits', parse: (data) => data.value }
@@ -1449,14 +1269,10 @@
         }
       }
 
-      // Fallback: use localStorage to simulate counting (only if both APIs fail)
       if (count === null) {
         let localCount = localStorage.getItem('visitorCountFallback');
-        if (localCount === null) {
-          localCount = 1;
-        } else {
-          localCount = parseInt(localCount) + 1;
-        }
+        if (localCount === null) localCount = 1;
+        else localCount = parseInt(localCount) + 1;
         localStorage.setItem('visitorCountFallback', localCount);
         count = localCount;
       }
