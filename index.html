@@ -1123,31 +1123,33 @@
 
   renderReviews();
 
-  // ==================== VISITOR COUNTER (GLOBAL) ====================
-  (function() {
-    if (window._visitorCounted) return;
-    window._visitorCounted = true;
-
-    async function updateGlobalCount() {
-      const el = document.getElementById('visitorCount');
-      if (!el) return;
-      const url = 'https://api.countapi.xyz/hit/divygyan-coaching/visits';
-      try {
-        const res = await fetch(url);
-        if (!res.ok) throw new Error('Network error');
-        const data = await res.json();
-        el.textContent = data.value;
-      } catch (error) {
-        console.warn('Visitor counter API failed, using fallback');
-        let local = localStorage.getItem('visitorCountFallback');
-        local = local ? parseInt(local) + 1 : 1;
-        localStorage.setItem('visitorCountFallback', local);
-        el.textContent = local;
-        setTimeout(updateGlobalCount, 5000);
-      }
+  // ==================== VISITOR COUNTER (SESSION-BASED) ====================
+(function() {
+  // Agar is session me already count ho chuka hai to dubara mat karo
+  if (sessionStorage.getItem('visitorCounted')) return;
+  
+  async function updateGlobalCount() {
+    const el = document.getElementById('visitorCount');
+    if (!el) return;
+    const url = 'https://api.countapi.xyz/hit/divygyan-coaching/visits';
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error('Network error');
+      const data = await res.json();
+      el.textContent = data.value;
+      // Is session ke liye count kar diya
+      sessionStorage.setItem('visitorCounted', 'true');
+    } catch (error) {
+      console.warn('Visitor counter API failed, using fallback');
+      let local = localStorage.getItem('visitorCountFallback');
+      local = local ? parseInt(local) + 1 : 1;
+      localStorage.setItem('visitorCountFallback', local);
+      el.textContent = local;
+      setTimeout(updateGlobalCount, 5000);
     }
-    updateGlobalCount();
-  })();
+  }
+  updateGlobalCount();
+})();
 </script>
 </body>
 </html>
